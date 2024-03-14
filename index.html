@@ -1,13 +1,742 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Admin Dashboard</title>
 </head>
+
 <body>
 
-    
-    
+    <div class="full_wrapper">
+        <aside>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./img/aside-icon(1).svg" alt="aside icon">
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/aside-icon(2).svg" alt="aside icon">
+
+                        Product
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/aside-icon(3).svg" alt="aside icon">
+
+                        Category
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/aside-icon(4).svg" alt="aside icon">
+
+                        Agen
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/aside-icon(5).svg" alt="aside icon">
+
+                        Analitic
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/aside-icon(6).svg" alt="aside icon">
+
+                        Setting
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <main>
+            <div class="pages">
+                <a href="#">Home</a>
+                <img src="./img/stick.svg" alt="stick">
+                <span>....</span>
+                <img src="./img/stick.svg" alt="stick">
+                <a href="#">Product</a>
+                <img src="./img/stick.svg" alt="stick">
+                <a href="#">Order</a>
+            </div>
+
+            <header>
+                <div class="seach">
+                    <div class="seach-input">
+                        <label for="seach">
+                            <img src="./img/search.svg" alt="search icon">
+                        </label>
+                        <input type="text" placeholder="Search" id="seach">
+                    </div>
+                    <img class="sliders" src="./img/sliders.svg" alt="sliders">
+                </div>
+                <div class="action">
+                    <button class="btn-light">
+                        Export
+                        <img src="./img/file-arrow-up.svg" alt="arrow">
+                    </button>
+
+                    <button class="btn-light">
+                        Print
+                        <img src="./img/printer.svg" alt="printer">
+                    </button>
+
+                    <button class="btn-blue">
+                        Create Folder
+                        <img src="./img/create-folder.svg" alt="create folder">
+                    </button>
+                </div>
+            </header>
+
+            <div class="sections">
+                <a href="#">
+                    All Order
+                    <img src="./img/Notify.svg" alt="Notify">
+                </a>
+
+                <a href="#">
+                    Pickup
+                    <img src="./img/Notify-1.svg" alt="Notify">
+                </a>
+
+                <a href="#">
+                    Return
+                    <img src="./img/Notify-2.svg" alt="Notify">
+                </a>
+            </div>
+
+            <div class="status">
+                <p>
+                    Showing result 101-120 Result
+                </p>
+
+                <div class="select-status">
+                    <p>Item per page</p>
+                    <select>
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                        <option value="40">40</option>
+                        <option value="50">50</option>
+                        <option value="60">60</option>
+                        <option value="70">70</option>
+                        <option value="80">80</option>
+                    </select>
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <input class="checkbox" type="checkbox">
+                        </th>
+                        <th>
+                            <select class="th-corner">
+                                <option value="ID Order">ID Order</option>
+                            </select>
+                        </th>
+                        <th>
+                            <span class="th-corner">
+                                Product
+                            </span>
+                        </th>
+                        <th>
+                            <span class="th-corner">
+                                Customer
+                            </span>
+                        </th>
+                        <th>
+                            <select class="th-corner">
+                                <option value="Status">Status</option>
+                            </select>
+                        </th>
+                        <th>
+                            <select class="th-corner">
+                                <option value="Created Date">Created Date</option>
+                            </select>
+                        </th>
+                        <th>
+                            <select class="th-corner">
+                                <option value="Deadline">Deadline</option>
+                            </select>
+                        </th>
+                        <th>
+                            <select class="th-corner">
+                                <option value="Price">Price</option>
+                            </select>
+                        </th>
+                        <th>
+                            <span class="th-corner">
+                                Action
+                            </span>
+                        </th>
+                    </tr>
+                </thead>
+
+
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <input class="checkbox" type="checkbox">
+                        </td>
+                        <td>
+                            <span class="status-order">990 - 132</span>
+                        </td>
+                        <td>
+                            <span class="status-product">TV 14 Inch Gede</span>
+                        </td>
+                        <td>
+                            <span class="status-customer">Nakoyame Japan</span>
+                        </td>
+                        <td>
+                            <button class="green">Complete</button>
+                        </td>
+                        <td>
+                            <span class="status-date">March 21, 2020
+                                00.28
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-deadline">
+                                March 23, 2020
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-price">$19.09</span>
+                        </td>
+                        <td class="action-td">
+                            <button class="action">
+                                Action
+                                <img src="./img/chevron-down.svg" alt="chevron down">
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input class="checkbox" type="checkbox">
+                        </td>
+                        <td>
+                            <span class="status-order">920 - 130</span>
+                        </td>
+                        <td>
+                            <span class="status-product">Sepeda BMX Shadow Blue</span>
+                        </td>
+                        <td>
+                            <span class="status-customer">Jakarta Selatan</span>
+                        </td>
+                        <td>
+                            <button class="yellow">Pending</button>
+                        </td>
+                        <td>
+                            <span class="status-date">
+                                April 10, 2020 10.98
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-deadline">
+                                April 15, 2022
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-price">$15.10</span>
+                        </td>
+                        <td class="action-td">
+                            <button class="action">
+                                Action
+                                <img src="./img/chevron-down.svg" alt="chevron down">
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input class="checkbox" type="checkbox">
+                        </td>
+                        <td>
+                            <span class="status-order">809 - 120</span>
+                        </td>
+                        <td>
+                            <span class="status-product">Mouse Gaming Logitech M-1332A</span>
+                        </td>
+                        <td>
+                            <span class="status-customer">Lumajang</span>
+                        </td>
+                        <td>
+                            <button class="yellow">Pending</button>
+                        </td>
+                        <td>
+                            <span class="status-date">
+                                March 21, 2020 0.28
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-deadline">
+                                March 28, 2020
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-price">$30.09</span>
+                        </td>
+                        <td class="action-td">
+                            <button class="action">
+                                Action
+                                <img src="./img/chevron-down.svg" alt="chevron down">
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input class="checkbox" type="checkbox">
+                        </td>
+                        <td>
+                            <span class="status-order">921 - 122</span>
+                        </td>
+                        <td>
+                            <span class="status-product">Iphone 11 256 GB TAM</span>
+                        </td>
+                        <td>
+                            <span class="status-customer">Surabaya</span>
+                        </td>
+                        <td>
+                            <button class="red">Rejected</button>
+                        </td>
+                        <td>
+                            <span class="status-date">
+                                Feb 20, 2020 8.10
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-deadline">
+                                Feb 27, 2020
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-price">$40.21</span>
+                        </td>
+                        <td class="action-td">
+                            <button class="action">
+                                Action
+                                <img src="./img/chevron-down.svg" alt="chevron down">
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input class="checkbox" type="checkbox">
+                        </td>
+                        <td>
+                            <span class="status-order">801 - 321</span>
+                        </td>
+                        <td>
+                            <span class="status-product">Laptop MSI GF 63 RD</span>
+                        </td>
+                        <td>
+                            <span class="status-customer">Jembrana</span>
+                        </td>
+                        <td>
+                            <button class="green">Complete</button>
+                        </td>
+                        <td>
+                            <span class="status-date">
+                                May 15, 2020
+                                11.20
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-deadline">
+                                May 24, 2020
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-price">$12.42</span>
+                        </td>
+                        <td class="action-td">
+                            <button class="action">
+                                Action
+                                <img src="./img/chevron-down.svg" alt="chevron down">
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input class="checkbox" type="checkbox">
+                        </td>
+                        <td>
+                            <span class="status-order">895 - 539</span>
+                        </td>
+                        <td>
+                            <span class="status-product">Black Cappuchino 1 Pack</span>
+                        </td>
+                        <td>
+                            <span class="status-customer">Denpasar</span>
+                        </td>
+                        <td>
+                            <button class="green">Complete</button>
+                        </td>
+                        <td>
+                            <span class="status-date">
+                                March 23, 2020
+                                20.20
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-deadline">
+                                March 30, 2020
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-price">$20.22</span>
+                        </td>
+                        <td class="action-td">
+                            <button class="action">
+                                Action
+                                <img src="./img/chevron-down.svg" alt="chevron down">
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input class="checkbox" type="checkbox">
+                        </td>
+                        <td>
+                            <span class="status-order">739 - 537</span>
+                        </td>
+                        <td>
+                            <span class="status-product">Oppo Reno 4</span>
+                        </td>
+                        <td>
+                            <span class="status-customer">Manhattan</span>
+                        </td>
+                        <td>
+                            <button class="yellow">Pending</button>
+                        </td>
+                        <td>
+                            <span class="status-date">
+                                Feb 17, 2020
+                                15.30
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-deadline">
+                                Feb 27, 2020
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-price">$23.43</span>
+                        </td>
+                        <td class="action-td">
+                            <button class="action">
+                                Action
+                                <img src="./img/chevron-down.svg" alt="chevron down">
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input class="checkbox" type="checkbox">
+                        </td>
+                        <td>
+                            <span class="status-order">842 - 213</span>
+                        </td>
+                        <td>
+                            <span class="status-product">Gaming Chair Dragon War </span>
+                        </td>
+                        <td>
+                            <span class="status-customer">Asem Bagus</span>
+                        </td>
+                        <td>
+                            <button class="red">Rejected</button>
+                        </td>
+                        <td>
+                            <span class="status-date">
+                                April 23, 2020
+                                17.23
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-deadline">
+                                April 30, 2020
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-price">$12.32</span>
+                        </td>
+                        <td class="action-td">
+                            <button class="action">
+                                Action
+                                <img src="./img/chevron-down.svg" alt="chevron down">
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input class="checkbox" type="checkbox">
+                        </td>
+                        <td>
+                            <span class="status-order">120 - 212</span>
+                        </td>
+                        <td>
+                            <span class="status-product">Voppoo Vinci X </span>
+                        </td>
+                        <td>
+                            <span class="status-customer">Situbondo</span>
+                        </td>
+                        <td>
+                            <button class="green">Complete</button>
+                        </td>
+                        <td>
+                            <span class="status-date">
+                                Januari 10, 2020
+                                19.20
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-deadline">
+                                Januari 18, 2020
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-price">$20.01</span>
+                        </td>
+                        <td class="action-td">
+                            <button class="action">
+                                Action
+                                <img src="./img/chevron-down.svg" alt="chevron down">
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input class="checkbox" type="checkbox">
+                        </td>
+                        <td>
+                            <span class="status-order">232 - 123</span>
+                        </td>
+                        <td>
+                            <span class="status-product">Voppoo Vinci X </span>
+                        </td>
+                        <td>
+                            <span class="status-customer">Banyuwangi</span>
+                        </td>
+                        <td>
+                            <button class="red">Rejected</button>
+                        </td>
+                        <td>
+                            <span class="status-date">
+                                April 11, 2020
+                                20.12
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-deadline">
+                                April 21, 2020
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-price">$24.20</span>
+                        </td>
+                        <td class="action-td">
+                            <button class="action">
+                                Action
+                                <img src="./img/chevron-down.svg" alt="chevron down">
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input class="checkbox" type="checkbox">
+                        </td>
+                        <td>
+                            <span class="status-order">756 - 907</span>
+                        </td>
+                        <td>
+                            <span class="status-product">CardRider MSI Gaming Cool</span>
+                        </td>
+                        <td>
+                            <span class="status-customer">Jember</span>
+                        </td>
+                        <td>
+                            <button class="green">Complete</button>
+                        </td>
+                        <td>
+                            <span class="status-date">
+                                Juny 29, 2020
+                                23.22
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-deadline">
+                                July 10, 2020
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-price">$14.50</span>
+                        </td>
+                        <td class="action-td">
+                            <button class="action">
+                                Action
+                                <img src="./img/chevron-down.svg" alt="chevron down">
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input class="checkbox" type="checkbox">
+                        </td>
+                        <td>
+                            <span class="status-order">981 - 204</span>
+                        </td>
+                        <td>
+                            <span class="status-product">Tumbler Starbucks 434</span>
+                        </td>
+                        <td>
+                            <span class="status-customer">Malang</span>
+                        </td>
+                        <td>
+                            <button class="green">Complete</button>
+                        </td>
+                        <td>
+                            <span class="status-date">
+                                April 15, 2020
+                                17.12
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-deadline">
+                                April 15, 2020
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-price">$21.20</span>
+                        </td>
+                        <td class="action-td">
+                            <button class="action">
+                                Action
+                                <img src="./img/chevron-down.svg" alt="chevron down">
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input class="checkbox" type="checkbox">
+                        </td>
+                        <td>
+                            <span class="status-order">698 - 203</span>
+                        </td>
+                        <td>
+                            <span class="status-product">Silkoro Hair Care 230 ML</span>
+                        </td>
+                        <td>
+                            <span class="status-customer">Kediri</span>
+                        </td>
+                        <td>
+                            <button class="green">Complete</button>
+                        </td>
+                        <td>
+                            <span class="status-date">
+                                Feb 17, 2020
+                                16.43
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-deadline">
+                                Feb 27, 2020
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-price">$44.09</span>
+                        </td>
+                        <td class="action-td">
+                            <button class="action">
+                                Action
+                                <img src="./img/chevron-down.svg" alt="chevron down">
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input class="checkbox" type="checkbox">
+                        </td>
+                        <td>
+                            <span class="status-order">709 - 230</span>
+                        </td>
+                        <td>
+                            <span class="status-product">Cricket Orange 323</span>
+                        </td>
+                        <td>
+                            <span class="status-customer">Blitar</span>
+                        </td>
+                        <td>
+                            <button class="green">Complete</button>
+                        </td>
+                        <td>
+                            <span class="status-date">
+                                Juny 14, 2020
+                                10.42
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-deadline">
+                                Juny 24, 2020
+                            </span>
+                        </td>
+                        <td>
+                            <span class="status-price">$12.09</span>
+                        </td>
+                        <td class="action-td">
+                            <button class="action">
+                                Action
+                                <img src="./img/chevron-down.svg" alt="chevron down">
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="down">
+                <a href="#">
+                    <img src="./img/left.svg" alt="left">
+                </a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">
+                    <img src="./img/right.svg" alt="right">
+                </a>
+            </div>
+        </main>
+    </div>
+
+
 </body>
+
 </html>

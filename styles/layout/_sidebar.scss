@@ -1,0 +1,41 @@
+aside {
+    background-color: #fff;
+    width: 144px;
+    height: 100vh;
+    padding: 172px 19px 0;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    li {
+        a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+
+            font-size: 10px;
+            line-height: 14px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #ABABAB;
+
+
+            svg {
+                background-color: red;
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        a:hover {
+            border: 1px solid #E1E8FF;
+            border-radius: 12px;
+
+            color: #003CFF;
+        }
+    }
+}

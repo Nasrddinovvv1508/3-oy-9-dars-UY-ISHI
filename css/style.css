@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.full_wrapper {
+  display: flex;
+}
+
+aside {
+  background-color: #fff;
+  width: 144px;
+  height: 100vh;
+  padding: 172px 19px 0;
+}
+
+aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+aside li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ABABAB;
+}
+
+aside li a svg {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+}
+
+aside li a:hover {
+  border: 1px solid #E1E8FF;
+  border-radius: 12px;
+  color: #003CFF;
+}
+
+main {
+  background-color: rgb(247, 248, 250);
+  width: 100vw;
+  padding: 18px 64px 33px 0px;
+}
+
+main .pages {
+  margin-left: 32px;
+  margin-bottom: 26px;
+}
+
+main .pages a,
+main .pages span {
+  font-size: 12px;
+  font-weight: 300;
+  color: #ABABAB;
+}
+
+main .pages a:hover {
+  color: #003CFF;
+  font-weight: 700;
+}
+
+main header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 32px;
+  margin-bottom: 20px;
+}
+
+main header .seach {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #E9E9EA;
+  border-radius: 20px;
+  padding: 15px 30px;
+  width: 465px;
+}
+
+main header .seach .seach-input {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+main header .seach #seach {
+  border: none;
+  width: 340px;
+}
+
+main header .seach #seach:focus {
+  outline: none;
+}
+
+main header .seach #seach::-moz-placeholder {
+  font-family: "Roboto";
+  font-size: 14px;
+  color: #1D1929;
+}
+
+main header .seach #seach::placeholder {
+  font-family: "Roboto";
+  font-size: 14px;
+  color: #1D1929;
+}
+
+main header .seach img {
+  cursor: pointer;
+}
+
+main header .action {
+  display: flex;
+  gap: 25px;
+}
+
+main header .action button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #1D1929;
+}
+
+main header .action .btn-light {
+  padding: 11px 25px;
+  border: 1px solid #E9E9EA;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+main header .action .btn-light:hover {
+  background-color: #f6f6f6;
+}
+
+main header .action .btn-blue {
+  padding: 10px 25px 10px 25px;
+  background-color: #003CFF;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+}
+
+main header .action .btn-blue:hover {
+  background-color: #0735cd;
+}
+
+main .sections {
+  margin-left: 32px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+main .sections a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 30px;
+  font-size: 14px;
+  color: #1D1929;
+}
+
+main .sections a:hover {
+  border-bottom: 3px solid #003CFF;
+}
+
+main .status {
+  margin-left: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+main .status p {
+  font-size: 12px;
+  font-weight: 300;
+  color: #ABABAB;
+}
+
+main .status .select-status {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+main .status .select-status select {
+  padding: 6px 15px;
+  border: 1px solid #E9E9EA;
+  border-radius: 10px;
+}
+
+main .status .select-status select option {
+  color: #1D1929;
+}
+
+main table {
+  width: 100%;
+  margin-left: 5px;
+  padding-right: 5px;
+  padding: 8px 0px;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+
+main table input.checkbox {
+  width: 24px;
+  height: 24px;
+  opacity: 0.5;
+}
+
+main table td {
+  text-align: center;
+}
+
+main table .th-corner {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 400;
+  color: #ABABAB;
+  border: none;
+}
+
+main table tbody tr td {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+main table tbody button {
+  cursor: pointer;
+}
+
+main table tbody .status-order {
+  font-size: 12px;
+  font-weight: 400;
+  color: #1D1929;
+}
+
+main table tbody .status-product {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 700;
+  color: #1D1929;
+}
+
+main table tbody .status-customer {
+  font-size: 12px;
+  font-weight: 400;
+  color: #1D1929;
+}
+
+main table tbody .green {
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: #DCFDD4;
+  border: none;
+  font-size: 10px;
+  font-weight: 400;
+  color: #4FAC16;
+}
+
+main table tbody .yellow {
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: #FAFDD4;
+  border: none;
+  font-size: 10px;
+  font-weight: 400;
+  color: #AC9D16;
+}
+
+main table tbody .red {
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: #FDD4D4;
+  border: none;
+  font-size: 10px;
+  font-weight: 400;
+  color: #AC1616;
+}
+
+main table tbody .status-date {
+  width: 75px;
+  font-size: 10px;
+  font-weight: 400;
+  color: #1D1929;
+}
+
+main table tbody .status-deadline {
+  font-size: 12px;
+  font-weight: 400;
+  color: #1D1929;
+}
+
+main table tbody .status-price {
+  font-size: 12px;
+  font-weight: 700;
+  color: #1D1929;
+}
+
+main table tbody .action-td {
+  width: 88px;
+}
+
+main table tbody .action {
+  width: 88px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: transparent;
+  color: #003CFF;
+  padding: 5px 15px;
+  border: 1px solid #E9E9EA;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+main .down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+main .down a {
+  font-size: 15px;
+  font-weight: 400;
+  color: #ABABAB;
+}
+
+main .down a:hover {
+  color: #003CFF;
+}/*# sourceMappingURL=style.css.map */
